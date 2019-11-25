@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="2" >
+	    
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/loan_amount" />
+            <EditText android:id="@+id/loan_amount"
+                android:layout_span="4"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:inputType="numberDecimal" />
+        </TableRow>
+        
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/down_payment" />
+            <EditText android:id="@+id/down_payment"
+                android:layout_span="4"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:inputType="numberDecimal" />
+        </TableRow>
+        
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/term" />
+            <EditText android:id="@+id/term"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:gravity="center"
+	            android:inputType="number" 
+	            android:minWidth="50dp"
+	            android:maxLength="3"
+	            android:singleLine="true" />
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="@string/year" />
+        </TableRow>
+        
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/annual_interest_rate" />
+            <EditText android:id="@+id/annual_interest_rate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:gravity="center"
+	            android:inputType="numberDecimal" 
+	            android:minWidth="100dp"
+	            android:maxLength="5"
+	            android:singleLine="true" />
+            <TextView
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="@string/sym_percent" />
+        </TableRow>
+        
+	</TableLayout>
+	
+    <TableLayout
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:stretchColumns="2" >
+        
+        <TableRow >
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/monthly_repayment" />
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sym_double_column" />
+            <TextView android:id="@+id/monthly_repayment"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:singleLine="true"
+		        android:ellipsize="end"
+		        android:text="@string/default_result" />
+        </TableRow>
+        
+        <TableRow 
+            android:layout_marginTop="10dp" >
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/total_repayment" />
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sym_double_column" />
+            <TextView android:id="@+id/total_repayment"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:singleLine="true"
+		        android:ellipsize="end"
+		        android:text="@string/default_result" />
+        </TableRow>
+        
+        <TableRow 
+            android:layout_marginTop="10dp" >
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/total_interest" />
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sym_double_column" />
+            <TextView android:id="@+id/total_interest"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:singleLine="true"
+		        android:ellipsize="end"
+		        android:text="@string/default_result" />
+        </TableRow>
+        
+        <TableRow 
+            android:layout_marginTop="10dp" >
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/average_monthly_interest" />
+            <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sym_double_column" />
+            <TextView android:id="@+id/average_monthly_interest"
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:singleLine="true"
+		        android:ellipsize="end"
+		        android:text="@string/default_result" />
+        </TableRow>
+        
+    </TableLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:padding="5dp"
+		android:orientation="horizontal"
+        >
+        
+        <TextView android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/calculate"
+			android:clickable="true"
+			android:onClick="onClick" />
+        
+        <TextView android:id="@+id/btnReset"
+            android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/reset"
+			android:clickable="true"
+			android:onClick="onClick" />
+    </LinearLayout>
+    
+</LinearLayout>
