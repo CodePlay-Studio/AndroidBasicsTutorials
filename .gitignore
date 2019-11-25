@@ -83,3 +83,31 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
+.DS_Store
+.idea/codeStyles/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+calculatorapp/.DS_Store
+calculatorapp/src/main/res/.DS_Store
+calculatorapp/src/main/res/drawable-hdpi/.DS_Store
+calculatorapp/src/main/resources/
+import-summary.txt
+weatherapp/.DS_Store
+weatherapp/.idea/codeStyles/
+weatherapp/.idea/compiler.xml
+weatherapp/.idea/encodings.xml
+weatherapp/.idea/gradle.xml
+weatherapp/.idea/misc.xml
+weatherapp/.idea/modules.xml
+weatherapp/.idea/workspace.xml
+weatherapp/src/.DS_Store
+weatherapp/src/main/.DS_Store
+weatherapp/src/main/java/.DS_Store
+weatherapp/src/main/java/my/.DS_Store
+weatherapp/src/main/java/my/com/.DS_Store
+weatherapp/src/main/java/my/com/codeplay/.DS_Store
+weatherapp/src/main/java/my/com/codeplay/weather/.DS_Store
+weatherapp/src/main/java/my/com/codeplay/weather/components/.DS_Store
+weatherapp/src/main/res/.DS_Store
+weatherapp/src/main/res/drawable-hdpi/.DS_Store
