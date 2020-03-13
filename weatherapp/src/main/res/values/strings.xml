@@ -24,7 +24,7 @@
 <resources>
 
     <string name="app_name">Weather</string>
-    <string name="copyright_statement">Copyright © CodePlay Studio 2014</string>
+    <string name="copyright_statement">Copyright © CodePlay Studio 2012–2020</string>
 	
 	<!-- WeatherActivity -->
 	<string name="loading">Loading&#8230;</string>

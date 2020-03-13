@@ -109,18 +109,18 @@
 	            android:text="@string/sym_percent" />
         </TableRow>
         
-        <View
-	        android:layout_width="match_parent"
-	        android:layout_height="1dp"
-			android:layout_marginTop="10dp"
-	        android:background="#0099CC" />
-        
 	</TableLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="@dimen/activity_vertical_margin"
+		android:background="#0099CC" />
 	
     <TableLayout
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_marginTop="10dp"
+	    android:layout_marginTop="@dimen/activity_vertical_margin"
 	    android:background="@drawable/bg"
 	    android:stretchColumns="2" >
         
@@ -216,11 +216,10 @@
     <LinearLayout 
         android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="10dp"
+		android:layout_marginTop="8dp"
 		android:padding="5dp"
 		android:orientation="horizontal"
-		android:background="#0099CC"
-        >
+		android:background="#0099CC">
 
 		<Button
             android:id="@+id/btnCalculate"

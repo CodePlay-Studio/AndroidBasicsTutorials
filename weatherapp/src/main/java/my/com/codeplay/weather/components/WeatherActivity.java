@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014 CodePlay Studio. All rights reserved.
+ * Copyright (c) 2012-2020 CodePlay Studio. All rights reserved.
  * 
  * This app is designed for training purpose used in Native Android�
  * for Mobile Development course conducted by CodePlay Studio. 
@@ -98,13 +98,6 @@ public class WeatherActivity extends Activity {
 		llLoading = (LinearLayout) findViewById(R.id.panel_loading);
 		progressBar = (ProgressBar) findViewById(R.id.progress);
 		btnRefresh  = (Button) findViewById(R.id.button_refresh);
-		btnRefresh.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-
-			}
-		});
-
 		tvLocation  = (TextView) findViewById(R.id.location);
 		tvTemperature = (TextView) findViewById(R.id.temperature);
 		tvHumidity = (TextView) findViewById(R.id.humidity);
@@ -131,7 +124,6 @@ public class WeatherActivity extends Activity {
 	private class WeatherDataRetrival extends AsyncTask<Void, Void, String> {
 		@Override
 		protected void onPreExecute() {
-			// TODO Auto-generated method stub
 			super.onPreExecute();
 			
 			if (rlWeather.isShown()) {
@@ -145,7 +137,6 @@ public class WeatherActivity extends Activity {
 
 		@Override
 		protected String doInBackground(Void... arg0) {
-			// TODO Auto-generated method stub
 			NetworkInfo info = ((ConnectivityManager) WeatherActivity.this
 					.getSystemService(Context.CONNECTIVITY_SERVICE))
 					.getActiveNetworkInfo();
@@ -241,7 +232,6 @@ public class WeatherActivity extends Activity {
 		
 		@Override
 		protected void onPostExecute(String result) {
-			// TODO Auto-generated method stub
 			super.onPostExecute(result);
 			
 			if (result.equals(NO_CONN)) {
